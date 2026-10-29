@@ -14,8 +14,8 @@ export const WhyItWorks: React.FC = () => {
       icon: Dumbbell,
     },
     {
-      title: 'About $0.63 a meal',
-      description: 'The whole cookbook costs $19. Cook in bulk at home and stop paying delivery prices for dinner.',
+      title: 'About $0.33 a meal',
+      description: 'The whole cookbook costs $10. Cook in bulk at home and stop paying delivery prices for dinner.',
       icon: Wallet,
     },
     {

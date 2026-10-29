@@ -57,7 +57,7 @@ export const App: React.FC = () => {
         {/* Section 4: Tangible Product + Included Bonuses */}
         <TangibleProduct />
 
-        {/* Section 5: The $19 Offer + Guarantee */}
+        {/* Section 5: The $10 Offer */}
         <OfferSection onPurchaseClick={handleCtaAction} />
 
         {/* Section 6: Concise Accessible FAQ + Final CTA */}

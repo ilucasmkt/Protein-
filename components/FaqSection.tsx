@@ -44,10 +44,6 @@ export const FaqSection: React.FC<FaqSectionProps> = ({ onCtaClick }) => {
       q: 'How do I get access?',
       a: 'After successful payment, download links appear on the confirmation page and are sent by email.',
     },
-    {
-      q: "What if it isn't for me?",
-      a: 'Request a refund within 14 days of purchase through the support contact on your receipt.',
-    },
   ];
 
   const toggle = (index: number) => {
@@ -124,7 +120,7 @@ export const FaqSection: React.FC<FaqSectionProps> = ({ onCtaClick }) => {
               Your busiest nights, covered for the whole month.
             </h3>
             <p className="text-sm sm:text-base text-[#FFF9EF]/80 font-normal">
-              30 high-protein recipes and 3 bonus guides. Just $19, about $0.63 a meal.
+              30 high-protein recipes and 3 bonus guides. Just $10, about $0.33 a meal.
             </p>
 
             <div className="pt-2">
@@ -136,13 +132,13 @@ export const FaqSection: React.FC<FaqSectionProps> = ({ onCtaClick }) => {
                 }}
                 className="w-full sm:w-auto min-w-[260px] inline-flex items-center justify-center gap-2.5 px-8 py-3.5 sm:py-4 text-base font-semibold text-brand-navy bg-[#FFF9EF] hover:bg-white active:scale-[0.99] rounded-xl shadow-md transition-all focus-visible:outline-2 focus-visible:outline-white cursor-pointer"
               >
-                <span>Get All 30 Recipes — $19</span>
+                <span>Get My 30 Recipes Now — $10</span>
                 <ArrowRight className="w-4 h-4 text-brand-orange" aria-hidden="true" />
               </button>
             </div>
             
             <p className="text-[11px] sm:text-xs text-[#FFF9EF]/70 pt-1">
-              Instant PDF download • One-time payment • 14-day money-back guarantee
+              Instant PDF download • One-time payment
             </p>
           </div>
         </div>

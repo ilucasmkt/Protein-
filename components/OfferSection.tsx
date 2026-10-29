@@ -5,7 +5,7 @@
 
 import React from 'react';
 import { siteConfig, isValidCheckoutUrl, trackCtaClick } from '../config';
-import { ShieldCheck, ArrowRight, Check, Sparkles } from 'lucide-react';
+import { ArrowRight, Check, Sparkles } from 'lucide-react';
 
 interface OfferSectionProps {
   onPurchaseClick: () => void;
@@ -38,7 +38,7 @@ export const OfferSection: React.FC<OfferSectionProps> = ({ onPurchaseClick }) =
             Stock your freezer for the whole month.
           </h2>
           <p className="text-base sm:text-lg text-brand-navy/85 max-w-lg mx-auto">
-            All 30 recipes + 3 bonus guides for one low price: $19.
+            All 30 recipes + 3 bonus guides for one low price: $10.
           </p>
         </div>
 
@@ -77,14 +77,14 @@ export const OfferSection: React.FC<OfferSectionProps> = ({ onPurchaseClick }) =
               <div className="border-b border-brand-border/60 pb-5">
                 <div className="flex items-baseline gap-2">
                   <span className="font-serif text-5xl sm:text-6xl font-bold text-brand-navy">
-                    $19
+                    $10
                   </span>
                   <span className="text-sm font-semibold text-brand-muted uppercase tracking-wider">
                     USD • One-Time Payment
                   </span>
                 </div>
                 <p className="text-xs sm:text-sm text-brand-navy/80 mt-1 font-medium">
-                  That's about $0.63 per meal. No subscription, no hidden fees. Pay once, keep it forever.
+                  That's about $0.33 per meal. No subscription, no hidden fees. Pay once, keep it forever.
                 </p>
               </div>
 
@@ -120,7 +120,7 @@ export const OfferSection: React.FC<OfferSectionProps> = ({ onPurchaseClick }) =
                     }}
                     className="w-full inline-flex items-center justify-center gap-3 py-4 px-8 text-base sm:text-lg font-bold text-white bg-brand-orange hover:bg-brand-orange-hover active:scale-[0.98] rounded-xl shadow-lg transition-all animate-cta-pulse focus-visible:outline-2 focus-visible:outline-brand-orange cursor-pointer"
                   >
-                    <span>Yes! Send Me All 30 Recipes — $19</span>
+                    <span>Get My 30 Recipes Now — $10</span>
                     <ArrowRight className="w-5 h-5 text-white" aria-hidden="true" />
                   </button>
                 ) : (
@@ -131,7 +131,7 @@ export const OfferSection: React.FC<OfferSectionProps> = ({ onPurchaseClick }) =
                       aria-disabled="true"
                       className="w-full inline-flex items-center justify-center gap-2.5 py-4 px-8 text-base sm:text-lg font-bold text-white bg-brand-orange/90 rounded-xl shadow-md animate-cta-pulse cursor-not-allowed select-none"
                     >
-                      <span>Get All 30 Recipes — $19 (Opening Soon)</span>
+                      <span>Get My 30 Recipes Now — $10 (Opening Soon)</span>
                       <ArrowRight className="w-5 h-5 text-white" aria-hidden="true" />
                     </button>
                     <p className="text-xs text-center text-brand-muted font-normal">
@@ -141,14 +141,7 @@ export const OfferSection: React.FC<OfferSectionProps> = ({ onPurchaseClick }) =
                 )}
               </div>
 
-              {/* 14-Day Guarantee & Legal Clarification */}
-              <div className="space-y-2.5 pt-2 border-t border-brand-border/60">
-                <div className="flex items-start gap-2.5">
-                  <ShieldCheck className="w-4 h-4 text-brand-orange shrink-0 mt-0.5" aria-hidden="true" />
-                  <p className="text-xs text-brand-navy/85 leading-relaxed">
-                    <strong className="font-semibold text-brand-navy">14-Day Money-Back Guarantee:</strong> Try the recipes with your real routine. If it isn't a fit for any reason, request a refund within 14 days of purchase through the support contact on your receipt. No hassle.
-                  </p>
-                </div>
+              <div className="pt-2 border-t border-brand-border/60">
                 <p className="text-[11px] text-brand-muted leading-relaxed">
                   Digital files only. Ingredients and prepared meals are not included. Any applicable tax is shown at checkout.
                 </p>

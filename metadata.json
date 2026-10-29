@@ -1,0 +1,8 @@
+{
+  "name": "Protein on Standby",
+  "description": "Explore 30 high-protein freezer recipes with portioning, freezing, and reheating notes. A practical digital cookbook for make-ahead lunches and dinners.",
+  "requestFramePermissions": [],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}

@@ -36,10 +36,16 @@ export const Hero: React.FC<HeroProps> = ({ onCtaClick, isLive = false }) => {
           </div>
 
           {/* 1. KILLER HEADLINE */}
+          <div className="inline-flex items-center gap-1.5 px-3 py-1 mb-3 rounded-full bg-brand-orange/10 text-brand-orange text-[11px] sm:text-xs font-bold uppercase tracking-wider">
+            The Freezer Meal Prep Cookbook
+          </div>
           <h1 className="font-serif text-3xl sm:text-5xl lg:text-[54px] font-normal text-brand-navy leading-[1.12] tracking-tight text-balance mb-2 sm:mb-3">
-            30 High-Protein Recipes <br className="hidden sm:inline" />
-            <span className="italic font-normal text-brand-navy/90">to Freeze.</span>
+            30 High-Protein Meals to Freeze. <br className="hidden sm:inline" />
+            <span className="italic font-normal text-brand-orange">Dinner Handled All Month.</span>
           </h1>
+          <p className="text-base sm:text-xl text-brand-navy/85 leading-snug max-w-2xl text-balance mb-2">
+            Cook once, stock your freezer, and have a healthy, protein-packed meal ready on your busiest nights. No more takeout, no more &ldquo;what&rsquo;s for dinner?&rdquo;
+          </p>
 
           {/* 2. APPETIZING PRODUCT & FOOD MOCKUP */}
           <div className="relative w-full max-w-[580px] my-1 sm:my-2 flex justify-center items-center">
@@ -65,26 +71,24 @@ export const Hero: React.FC<HeroProps> = ({ onCtaClick, isLive = false }) => {
                 trackCtaClick('hero_cta_clicked');
                 onCtaClick();
               }}
-              className="w-full sm:w-auto min-w-[260px] inline-flex items-center justify-center gap-2.5 px-8 py-3.5 sm:py-4 text-base sm:text-lg font-semibold text-[#FFF9EF] bg-brand-navy hover:bg-[#243b4e] active:scale-[0.99] rounded-xl shadow-md hover:shadow-lg transition-all focus-visible:outline-2 focus-visible:outline-brand-navy cursor-pointer"
+              className="w-full sm:w-auto min-w-[300px] inline-flex items-center justify-center gap-2.5 px-8 py-4 text-base sm:text-lg font-bold text-white bg-brand-orange hover:bg-brand-orange-hover active:scale-[0.98] rounded-xl shadow-lg transition-all animate-cta-pulse focus-visible:outline-2 focus-visible:outline-brand-orange cursor-pointer"
             >
-              <span>{isLive ? 'Get the cookbook — $19' : "See what's included"}</span>
-              <ArrowDown className="w-4 h-4 text-brand-orange" aria-hidden="true" />
+              <span>Get All 30 Recipes — $19</span>
+              <ArrowDown className="w-4 h-4 text-white" aria-hidden="true" />
             </button>
           </div>
 
           {/* 4. SUBHEADLINE & REASONS SUPPORT */}
           <div className="mt-4 sm:mt-5 max-w-xl text-center space-y-2">
-            <p className="text-sm sm:text-base text-brand-navy/85 font-normal leading-relaxed text-balance">
-              Make busy nights easier. Cook ahead, freeze in individual portions, and reheat homemade meals whenever you need them.
+            <ul className="flex flex-wrap justify-center gap-x-4 gap-y-1.5 text-xs sm:text-sm font-semibold text-brand-navy/90">
+              <li>✓ 30 recipes</li>
+              <li>✓ Protein &amp; macros per serving</li>
+              <li>✓ Shopping lists &amp; prep plan</li>
+              <li>✓ Just $0.63 a meal</li>
+            </ul>
+            <p className="pt-1 text-[11px] sm:text-xs text-brand-muted font-medium">
+              One-time payment • Instant PDF download • 14-day money-back guarantee
             </p>
-            <div className="pt-1 text-[11px] sm:text-xs text-brand-muted space-y-0.5">
-              <p className="font-medium text-brand-navy/75">
-                One-time payment • Instant PDF download
-              </p>
-              <p>
-                Recipes to make at home. No food delivery.
-              </p>
-            </div>
           </div>
 
         </div>

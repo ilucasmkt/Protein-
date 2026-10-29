@@ -11,22 +11,22 @@ export const TangibleProduct: React.FC = () => {
   const rows = [
     {
       title: 'The cookbook',
-      description: '30 recipes with ingredients, portions, estimated nutrition, and freezing/reheating notes.',
+      description: '30 high-protein recipes with ingredients, portions, estimated calories and macros, plus freezing and reheating notes.',
       icon: BookOpen,
     },
     {
       title: 'First Batch Roadmap',
-      description: 'A three-recipe starting plan and combined shopping list.',
+      description: 'Not sure where to start? A simple first-day plan with a combined shopping list.',
       icon: Map,
     },
     {
       title: 'Freezer Finder',
-      description: 'Inventory pages and printable labels.',
+      description: 'Printable labels and inventory pages so you always know what is in your freezer.',
       icon: Tags,
     },
     {
       title: 'Mix Your Week',
-      description: 'A reusable map to rotate your meals.',
+      description: 'A rotation map that spreads your 30 meals across the whole month.',
       icon: Calendar,
     },
   ];
@@ -43,7 +43,7 @@ export const TangibleProduct: React.FC = () => {
             What You Receive
           </div>
           <h2 className="font-serif text-3xl sm:text-4xl md:text-[42px] font-normal text-brand-navy leading-tight text-balance">
-            The recipes. The prep plan. The practical extras.
+            Everything you need to fill your freezer for the month.
           </h2>
         </div>
 

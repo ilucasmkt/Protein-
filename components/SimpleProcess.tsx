@@ -10,20 +10,20 @@ export const SimpleProcess: React.FC = () => {
   const steps = [
     {
       num: '01',
-      title: 'Cook your favorites.',
-      description: 'Pick a few recipes and follow the instructions.',
+      title: 'Cook in batches.',
+      description: 'Pick your recipes, follow the shopping list, and prep a few meals at once in one cooking session.',
       icon: ChefHat,
     },
     {
       num: '02',
       title: 'Portion and freeze.',
-      description: 'Follow the cooling, storage, and labeling guidance.',
+      description: 'Use the cooling, storage and label guidance to stock your freezer with ready-to-heat meals.',
       icon: Snowflake,
     },
     {
       num: '03',
-      title: 'Reheat when needed.',
-      description: 'Use the directions for that recipe.',
+      title: 'Heat and eat.',
+      description: 'A healthy, high-protein dinner is ready in minutes on your busiest nights.',
       icon: Flame,
     },
   ];
@@ -38,7 +38,7 @@ export const SimpleProcess: React.FC = () => {
             How It Works
           </div>
           <h2 className="font-serif text-3xl sm:text-4xl md:text-[42px] font-normal text-brand-navy leading-tight text-balance">
-            Cook a batch. Keep your options open.
+            Cook once. Eat well for weeks.
           </h2>
         </div>
 

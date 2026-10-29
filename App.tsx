@@ -6,6 +6,7 @@
 import React from 'react';
 import { siteConfig, isValidCheckoutUrl } from './config';
 import { Hero } from './components/Hero';
+import { WhyItWorks } from './components/WhyItWorks';
 import { VarietyGallery } from './components/VarietyGallery';
 import { SimpleProcess } from './components/SimpleProcess';
 import { TangibleProduct } from './components/TangibleProduct';
@@ -44,6 +45,8 @@ export const App: React.FC = () => {
           onCtaClick={isReady ? handleCtaAction : handleExploreProduct}
           isLive={isReady}
         />
+
+        <WhyItWorks />
 
         {/* Section 2: Variety Gallery — Three Appetizing Meal Examples */}
         <VarietyGallery />

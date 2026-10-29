@@ -37,10 +37,10 @@ export const VarietyGallery: React.FC = () => {
             Illustrative Recipe Examples
           </div>
           <h2 className="font-serif text-3xl sm:text-4xl md:text-[42px] font-normal text-brand-navy leading-tight text-balance">
-            More to choose from when the day gets busy.
+            30 recipes your whole family will actually eat.
           </h2>
           <p className="mt-3.5 text-base sm:text-lg text-brand-navy/80 font-normal">
-            Start with a few favorites. Build your freezer collection over time.
+            Chicken, turkey, beef and more, from comfort-food classics to fresh lean bowls. A month of variety, so you never get bored.
           </p>
         </div>
 

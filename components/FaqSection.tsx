@@ -17,6 +17,14 @@ export const FaqSection: React.FC<FaqSectionProps> = ({ onCtaClick }) => {
 
   const faqs = [
     {
+      q: 'Will this really cover a whole month?',
+      a: 'Yes. With 30 recipes and the Mix Your Week rotation map, you can spread your meals across the month. Cook in batches, freeze, and pull a meal out whenever you need it.',
+    },
+    {
+      q: 'Are the recipes really high in protein?',
+      a: 'Every recipe is built around a protein-rich main ingredient, and each one lists estimated protein per serving so you can see exactly what you are eating.',
+    },
+    {
       q: 'Is this food delivery?',
       a: "No. It's a digital cookbook with 30 recipes. You buy the ingredients and prepare the food at home.",
     },
@@ -113,10 +121,10 @@ export const FaqSection: React.FC<FaqSectionProps> = ({ onCtaClick }) => {
           />
           <div className="relative z-10 space-y-4 max-w-lg mx-auto">
             <h3 className="font-serif text-2xl sm:text-3xl md:text-4xl font-normal text-[#FFF9EF] leading-tight text-balance">
-              Give your next busy day a backup plan.
+              Your busiest nights, covered for the whole month.
             </h3>
             <p className="text-sm sm:text-base text-[#FFF9EF]/80 font-normal">
-              30 recipes and 3 practical guides to start stocking your freezer.
+              30 high-protein recipes and 3 bonus guides. Just $19, about $0.63 a meal.
             </p>
 
             <div className="pt-2">
@@ -128,7 +136,7 @@ export const FaqSection: React.FC<FaqSectionProps> = ({ onCtaClick }) => {
                 }}
                 className="w-full sm:w-auto min-w-[260px] inline-flex items-center justify-center gap-2.5 px-8 py-3.5 sm:py-4 text-base font-semibold text-brand-navy bg-[#FFF9EF] hover:bg-white active:scale-[0.99] rounded-xl shadow-md transition-all focus-visible:outline-2 focus-visible:outline-white cursor-pointer"
               >
-                <span>{isReady ? 'Get the cookbook — $19' : 'View offer — $19'}</span>
+                <span>Get All 30 Recipes — $19</span>
                 <ArrowRight className="w-4 h-4 text-brand-orange" aria-hidden="true" />
               </button>
             </div>

@@ -15,13 +15,13 @@ export const OfferSection: React.FC<OfferSectionProps> = ({ onPurchaseClick }) =
   const isReady = siteConfig.isLive && isValidCheckoutUrl(siteConfig.checkoutUrl);
 
   const includedItems = [
-    '30 high-protein lunch & dinner recipes',
-    'Clear portioning, cooling, freezing & reheating instructions',
-    'Estimated calories, protein, carbs & fat per serving',
+    '30 high-protein lunch & dinner recipes, a full month of meals',
+    'Simple portioning, cooling, freezing & reheating instructions',
+    'Estimated calories, protein, carbs & fat on every recipe',
     'Bonus 1: First Batch Roadmap (starter plan & prep sequence)',
     'Bonus 2: Freezer Finder (inventory pages & printable labels)',
     'Bonus 3: Mix Your Week (reusable weekly rotation map)',
-    'Lifetime personal access to all digital PDF files',
+    'Instant PDF download. Yours to keep forever',
   ];
 
   return (
@@ -32,13 +32,13 @@ export const OfferSection: React.FC<OfferSectionProps> = ({ onPurchaseClick }) =
         <div className="text-center max-w-2xl mx-auto mb-10 sm:mb-14">
           <div className="inline-flex items-center gap-1.5 text-xs font-bold uppercase tracking-wider text-brand-orange mb-2.5">
             <Sparkles className="w-3.5 h-3.5" aria-hidden="true" />
-            Special Opportunity • Instant Digital Access
+            Instant Digital Access
           </div>
           <h2 className="font-serif text-3xl sm:text-4xl md:text-[46px] font-normal text-brand-navy leading-tight mb-3 text-balance">
-            Your freezer backup plan starts here.
+            Stock your freezer for the whole month.
           </h2>
           <p className="text-base sm:text-lg text-brand-navy/85 max-w-lg mx-auto">
-            The digital cookbook + all three bonuses for just $19.
+            All 30 recipes + 3 bonus guides for one low price: $19.
           </p>
         </div>
 
@@ -84,7 +84,7 @@ export const OfferSection: React.FC<OfferSectionProps> = ({ onPurchaseClick }) =
                   </span>
                 </div>
                 <p className="text-xs sm:text-sm text-brand-navy/80 mt-1 font-medium">
-                  No subscription. Pay once, download your files, keep them forever.
+                  That's about $0.63 per meal. No subscription, no hidden fees. Pay once, keep it forever.
                 </p>
               </div>
 
@@ -120,7 +120,7 @@ export const OfferSection: React.FC<OfferSectionProps> = ({ onPurchaseClick }) =
                     }}
                     className="w-full inline-flex items-center justify-center gap-3 py-4 px-8 text-base sm:text-lg font-bold text-white bg-brand-orange hover:bg-brand-orange-hover active:scale-[0.98] rounded-xl shadow-lg transition-all animate-cta-pulse focus-visible:outline-2 focus-visible:outline-brand-orange cursor-pointer"
                   >
-                    <span>Get All 30 Recipes for Just $19</span>
+                    <span>Yes! Send Me All 30 Recipes — $19</span>
                     <ArrowRight className="w-5 h-5 text-white" aria-hidden="true" />
                   </button>
                 ) : (
@@ -146,7 +146,7 @@ export const OfferSection: React.FC<OfferSectionProps> = ({ onPurchaseClick }) =
                 <div className="flex items-start gap-2.5">
                   <ShieldCheck className="w-4 h-4 text-brand-orange shrink-0 mt-0.5" aria-hidden="true" />
                   <p className="text-xs text-brand-navy/85 leading-relaxed">
-                    <strong className="font-semibold text-brand-navy">14-Day Money-Back Guarantee:</strong> Try the format with your real routine. If it isn't a fit, request a refund within 14 days of purchase through the support contact on your receipt.
+                    <strong className="font-semibold text-brand-navy">14-Day Money-Back Guarantee:</strong> Try the recipes with your real routine. If it isn't a fit for any reason, request a refund within 14 days of purchase through the support contact on your receipt. No hassle.
                   </p>
                 </div>
                 <p className="text-[11px] text-brand-muted leading-relaxed">

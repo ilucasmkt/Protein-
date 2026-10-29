@@ -4,7 +4,7 @@
  */
 
 import React from 'react';
-import { BookOpen, Map, Tags, Calendar, FileText, ExternalLink } from 'lucide-react';
+import { BookOpen, ShoppingCart, Thermometer, Map, Tags, Calendar, FileText, ExternalLink } from 'lucide-react';
 import { siteConfig } from '../config';
 
 export const TangibleProduct: React.FC = () => {
@@ -13,6 +13,16 @@ export const TangibleProduct: React.FC = () => {
       title: 'The cookbook',
       description: '30 high-protein recipes with ingredients, portions, estimated calories and macros, plus freezing and reheating notes.',
       icon: BookOpen,
+    },
+    {
+      title: 'Bonus: Master Grocery List',
+      description: 'Your shopping list for the whole month, organized by store aisle, so you shop once and never forget an ingredient.',
+      icon: ShoppingCart,
+    },
+    {
+      title: 'Bonus: Reheating Cheat Sheet',
+      description: 'The best way to reheat every meal in the microwave, oven or air fryer, so frozen food tastes fresh, not dried out.',
+      icon: Thermometer,
     },
     {
       title: 'First Batch Roadmap',
@@ -66,7 +76,7 @@ export const TangibleProduct: React.FC = () => {
             {/* Included 3 bonus guides uncropped bundle */}
             <div className="bg-white p-4 sm:p-5 rounded-2xl border border-brand-border/70 shadow-xs">
               <span className="text-[11px] font-bold uppercase tracking-wider text-brand-orange block mb-2 text-center">
-                3 Included Bonus Guides
+                Included Bonus Guides
               </span>
               <img
                 src={`${import.meta.env.BASE_URL}assets/aistudio/bonus-bundle-protein-on-standby_9dac03d3.png`}

@@ -18,9 +18,11 @@ export const OfferSection: React.FC<OfferSectionProps> = ({ onPurchaseClick }) =
     '30 high-protein lunch & dinner recipes, a full month of meals',
     'Simple portioning, cooling, freezing & reheating instructions',
     'Estimated calories, protein, carbs & fat on every recipe',
-    'Bonus 1: First Batch Roadmap (starter plan & prep sequence)',
-    'Bonus 2: Freezer Finder (inventory pages & printable labels)',
-    'Bonus 3: Mix Your Week (reusable weekly rotation map)',
+    'Bonus 1: Master Grocery List (the whole month, organized by store aisle)',
+    'Bonus 2: Reheating Cheat Sheet (microwave, oven & air fryer, so nothing dries out)',
+    'Bonus 3: First Batch Roadmap (starter plan & prep sequence)',
+    'Bonus 4: Freezer Finder (inventory pages & printable labels)',
+    'Bonus 5: Mix Your Week (reusable weekly rotation map)',
     'Instant PDF download. Yours to keep forever',
   ];
 
@@ -38,7 +40,7 @@ export const OfferSection: React.FC<OfferSectionProps> = ({ onPurchaseClick }) =
             Stock your freezer for the whole month.
           </h2>
           <p className="text-base sm:text-lg text-brand-navy/85 max-w-lg mx-auto">
-            All 30 recipes + 3 bonus guides for one low price: $10.
+            All 30 recipes + 5 bonus guides for one low price: $10.
           </p>
         </div>
 
@@ -65,7 +67,7 @@ export const OfferSection: React.FC<OfferSectionProps> = ({ onPurchaseClick }) =
                   height="300"
                 />
                 <div className="mt-3 py-1.5 px-4 bg-white/90 rounded-full border border-brand-border/70 text-[11px] sm:text-xs font-bold text-brand-navy uppercase tracking-wider text-center shadow-xs">
-                  All 30 Recipes + 3 Bonus Guides Included
+                  All 30 Recipes + 5 Bonus Guides Included
                 </div>
               </div>
             </div>

@@ -120,7 +120,7 @@ export const FaqSection: React.FC<FaqSectionProps> = ({ onCtaClick }) => {
               Your busiest nights, covered for the whole month.
             </h3>
             <p className="text-sm sm:text-base text-[#FFF9EF]/80 font-normal">
-              30 high-protein recipes and 3 bonus guides. Just $10, about $0.33 a meal.
+              30 high-protein recipes and 5 bonus guides. Just $10, about $0.33 a meal.
             </p>
 
             <div className="pt-2">

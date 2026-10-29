@@ -65,7 +65,7 @@ export const StickyBottomBar: React.FC<StickyBottomBarProps> = ({ onCtaClick, is
           <span className="font-serif font-bold text-base text-brand-navy leading-none">
             $10 <span className="text-[11px] font-sans font-medium text-brand-muted">one-time</span>
           </span>
-          <span className="text-[10px] text-brand-muted mt-0.5">30 Recipes + 3 Bonuses • $0.33/meal</span>
+          <span className="text-[10px] text-brand-muted mt-0.5">30 Recipes + 5 Bonuses • $0.33/meal</span>
         </div>
 
         <button

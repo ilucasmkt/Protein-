@@ -120,7 +120,7 @@ export const FaqSection: React.FC<FaqSectionProps> = ({ onCtaClick }) => {
               Your busiest nights, covered for the whole month.
             </h3>
             <p className="text-sm sm:text-base text-[#FFF9EF]/80 font-normal">
-              30 high-protein recipes and 5 bonus guides. Just $10, about $0.33 a meal.
+              30 high-protein recipes from $9. Go Premium for $19 and add 5 bonus guides.
             </p>
 
             <div className="pt-2">
@@ -132,7 +132,7 @@ export const FaqSection: React.FC<FaqSectionProps> = ({ onCtaClick }) => {
                 }}
                 className="w-full sm:w-auto min-w-[260px] inline-flex items-center justify-center gap-2.5 px-8 py-3.5 sm:py-4 text-base font-semibold text-brand-navy bg-[#FFF9EF] hover:bg-white active:scale-[0.99] rounded-xl shadow-md transition-all focus-visible:outline-2 focus-visible:outline-white cursor-pointer"
               >
-                <span>Get My 30 Recipes Now — $10</span>
+                <span>See Plans — From $9</span>
                 <ArrowRight className="w-4 h-4 text-brand-orange" aria-hidden="true" />
               </button>
             </div>

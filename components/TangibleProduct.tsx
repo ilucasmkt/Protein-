@@ -15,27 +15,27 @@ export const TangibleProduct: React.FC = () => {
       icon: BookOpen,
     },
     {
-      title: 'Bonus: Master Grocery List',
+      title: 'Premium bonus: Master Grocery List',
       description: 'Your shopping list for the whole month, organized by store aisle, so you shop once and never forget an ingredient.',
       icon: ShoppingCart,
     },
     {
-      title: 'Bonus: Reheating Cheat Sheet',
+      title: 'Premium bonus: Reheating Cheat Sheet',
       description: 'The best way to reheat every meal in the microwave, oven or air fryer, so frozen food tastes fresh, not dried out.',
       icon: Thermometer,
     },
     {
-      title: 'First Batch Roadmap',
+      title: 'Premium bonus: First Batch Roadmap',
       description: 'Not sure where to start? A simple first-day plan with a combined shopping list.',
       icon: Map,
     },
     {
-      title: 'Freezer Finder',
+      title: 'Premium bonus: Freezer Finder',
       description: 'Printable labels and inventory pages so you always know what is in your freezer.',
       icon: Tags,
     },
     {
-      title: 'Mix Your Week',
+      title: 'Premium bonus: Mix Your Week',
       description: 'A rotation map that spreads your 30 meals across the whole month.',
       icon: Calendar,
     },
@@ -76,7 +76,7 @@ export const TangibleProduct: React.FC = () => {
             {/* Included 3 bonus guides uncropped bundle */}
             <div className="bg-white p-4 sm:p-5 rounded-2xl border border-brand-border/70 shadow-xs">
               <span className="text-[11px] font-bold uppercase tracking-wider text-brand-orange block mb-2 text-center">
-                Included Bonus Guides
+                Premium Bonus Guides
               </span>
               <img
                 src={`${import.meta.env.BASE_URL}assets/aistudio/bonus-bundle-protein-on-standby_9dac03d3.png`}

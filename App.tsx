@@ -16,17 +16,22 @@ import { Footer } from './components/Footer';
 import { StickyBottomBar } from './components/StickyBottomBar';
 
 export const App: React.FC = () => {
-  const isReady = siteConfig.isLive && isValidCheckoutUrl(siteConfig.checkoutUrl);
+  const isReady =
+    siteConfig.isLive &&
+    isValidCheckoutUrl(siteConfig.checkoutUrlBasic) &&
+    isValidCheckoutUrl(siteConfig.checkoutUrlPremium);
 
+  // Hero / FAQ / sticky bar buttons take the visitor to the two-plan comparison.
   const handleCtaAction = () => {
-    if (isReady) {
-      window.location.href = siteConfig.checkoutUrl;
-    } else {
-      const offerElement = document.getElementById('offer');
-      if (offerElement) {
-        offerElement.scrollIntoView({ behavior: 'smooth' });
-      }
+    const offerElement = document.getElementById('offer');
+    if (offerElement) {
+      offerElement.scrollIntoView({ behavior: 'smooth' });
     }
+  };
+
+  const handleBuy = (plan: 'basic' | 'premium') => {
+    if (!isReady) return;
+    window.location.href = plan === 'premium' ? siteConfig.checkoutUrlPremium : siteConfig.checkoutUrlBasic;
   };
 
   const handleExploreProduct = () => {
@@ -42,7 +47,7 @@ export const App: React.FC = () => {
       <main id="main-content">
         {/* Section 1: Hero — Food & Product First (Headline -> Mockup -> CTA Button -> Reasons) */}
         <Hero
-          onCtaClick={isReady ? handleCtaAction : handleExploreProduct}
+          onCtaClick={handleCtaAction}
           isLive={isReady}
         />
 
@@ -57,8 +62,8 @@ export const App: React.FC = () => {
         {/* Section 4: Tangible Product + Included Bonuses */}
         <TangibleProduct />
 
-        {/* Section 5: The $10 Offer */}
-        <OfferSection onPurchaseClick={handleCtaAction} />
+        {/* Section 5: Two Plans: $9 Recipes / $19 Premium */}
+        <OfferSection onBuy={handleBuy} isReady={isReady} />
 
         {/* Section 6: Concise Accessible FAQ + Final CTA */}
         <FaqSection onCtaClick={handleCtaAction} />

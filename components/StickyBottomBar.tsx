@@ -63,9 +63,9 @@ export const StickyBottomBar: React.FC<StickyBottomBarProps> = ({ onCtaClick, is
       <div className="flex items-center justify-between gap-3 max-w-md mx-auto">
         <div className="flex flex-col">
           <span className="font-serif font-bold text-base text-brand-navy leading-none">
-            $10 <span className="text-[11px] font-sans font-medium text-brand-muted">one-time</span>
+            From $9 <span className="text-[11px] font-sans font-medium text-brand-muted">one-time</span>
           </span>
-          <span className="text-[10px] text-brand-muted mt-0.5">30 Recipes + 5 Bonuses • $0.33/meal</span>
+          <span className="text-[10px] text-brand-muted mt-0.5">Premium $19 includes 5 bonus guides</span>
         </div>
 
         <button
@@ -76,7 +76,7 @@ export const StickyBottomBar: React.FC<StickyBottomBarProps> = ({ onCtaClick, is
           }}
           className="inline-flex items-center justify-center gap-1.5 px-4 py-2 text-xs font-semibold text-[#FFF9EF] bg-brand-navy hover:bg-[#243b4e] active:scale-[0.98] rounded-lg shadow-sm whitespace-nowrap focus-visible:outline-2 focus-visible:outline-brand-navy"
         >
-          <span>Get It Now</span>
+          <span>See Plans</span>
           <ArrowRight className="w-3.5 h-3.5 text-brand-orange" aria-hidden="true" />
         </button>
       </div>

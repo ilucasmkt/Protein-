@@ -11,10 +11,12 @@ export interface AppConfig {
   isLive: boolean;
 
   /**
-   * External checkout URL (e.g. Gumroad, Lemon Squeezy, Stripe Checkout).
+   * External checkout URLs (e.g. Gumroad, Lemon Squeezy, Stripe Checkout).
+   * Basic = 30 recipes ($9). Premium = 30 recipes + 5 bonus guides ($19).
    * Leave empty until supplied by merchant.
    */
-  checkoutUrl: string;
+  checkoutUrlBasic: string;
+  checkoutUrlPremium: string;
 
   /**
    * Optional Breakfast on Standby companion product ($7).
@@ -42,7 +44,8 @@ export interface AppConfig {
 
 export const siteConfig: AppConfig = {
   isLive: false,
-  checkoutUrl: '',
+  checkoutUrlBasic: '',
+  checkoutUrlPremium: '',
   enableBreakfastAddOn: false,
   sampleRecipeUrl: '',
   sampleRecipeImage: '',

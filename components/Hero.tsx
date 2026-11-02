@@ -41,7 +41,7 @@ export const Hero: React.FC<HeroProps> = ({ onCtaClick, isLive = false }) => {
           </div>
           <h1 className="font-serif text-3xl sm:text-5xl lg:text-[54px] font-normal text-brand-navy leading-[1.12] tracking-tight text-balance mb-2 sm:mb-3">
             30 High-Protein Meals to Freeze. <br className="hidden sm:inline" />
-            <span className="italic font-normal text-brand-orange">Dinner Handled All Month.</span>
+            <span className="italic font-normal text-brand-orange">Ready for Your Busiest Nights.</span>
           </h1>
           <p className="text-base sm:text-xl text-brand-navy/85 leading-snug max-w-2xl text-balance mb-2">
             Cook once, stock your freezer, and have a healthy, protein-packed meal ready on your busiest nights. No more takeout, no more &ldquo;what&rsquo;s for dinner?&rdquo;
@@ -84,7 +84,7 @@ export const Hero: React.FC<HeroProps> = ({ onCtaClick, isLive = false }) => {
               <li>✓ 30 recipes</li>
               <li>✓ Protein &amp; macros per serving</li>
               <li>✓ Premium adds 5 bonus guides</li>
-              <li>✓ From $0.30 a meal</li>
+              <li>✓ Heat &amp; eat on busy nights</li>
             </ul>
             <p className="pt-1 text-[11px] sm:text-xs text-brand-muted font-medium">
               One-time payment • Instant PDF download

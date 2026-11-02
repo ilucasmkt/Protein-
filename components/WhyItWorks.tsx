@@ -4,7 +4,7 @@
  */
 
 import React from 'react';
-import { Dumbbell, Wallet, Clock, X, Check } from 'lucide-react';
+import { Dumbbell, Snowflake, Clock, X, Check } from 'lucide-react';
 
 export const WhyItWorks: React.FC = () => {
   const benefits = [
@@ -14,9 +14,9 @@ export const WhyItWorks: React.FC = () => {
       icon: Dumbbell,
     },
     {
-      title: 'From $0.30 a meal',
-      description: 'The whole cookbook starts at $9. Cook in bulk at home and stop paying delivery prices for dinner.',
-      icon: Wallet,
+      title: 'Meals ready for busy nights',
+      description: 'Cook in batches, freeze portions, and have a prepared meal waiting for the nights you are too tired to cook.',
+      icon: Snowflake,
     },
     {
       title: 'Zero weeknight stress',
@@ -32,10 +32,10 @@ export const WhyItWorks: React.FC = () => {
     'Cooking from scratch every single night',
   ];
   const withUs = [
-    'A ready-made meal in your freezer every night',
+    'A prepared meal in your freezer for your busiest nights',
     'Shopping lists and a plan so nothing goes to waste',
     'Protein, calories and macros listed per serving',
-    'Cook ahead once, eat well for the whole month',
+    'Cook ahead once, eat well on the nights that matter',
   ];
 
   return (
@@ -46,7 +46,7 @@ export const WhyItWorks: React.FC = () => {
             Why Freezer Meal Prep
           </div>
           <h2 className="font-serif text-3xl sm:text-4xl md:text-[42px] font-normal text-brand-navy leading-tight text-balance">
-            Eat high-protein all month without cooking every night.
+            Have high-protein meals ready for your busiest nights.
           </h2>
         </div>
 

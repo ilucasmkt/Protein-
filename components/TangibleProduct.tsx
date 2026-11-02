@@ -16,7 +16,7 @@ export const TangibleProduct: React.FC = () => {
     },
     {
       title: 'Premium bonus: Master Grocery List',
-      description: 'Your shopping list for the whole month, organized by store aisle, so you shop once and never forget an ingredient.',
+      description: 'Your shopping list, organized by store aisle, so you shop once and never forget an ingredient.',
       icon: ShoppingCart,
     },
     {
@@ -36,7 +36,7 @@ export const TangibleProduct: React.FC = () => {
     },
     {
       title: 'Premium bonus: Mix Your Week',
-      description: 'A rotation map that spreads your 30 meals across the whole month.',
+      description: 'A rotation map that helps you mix your meals through the week.',
       icon: Calendar,
     },
   ];
@@ -53,7 +53,7 @@ export const TangibleProduct: React.FC = () => {
             What You Receive
           </div>
           <h2 className="font-serif text-3xl sm:text-4xl md:text-[42px] font-normal text-brand-navy leading-tight text-balance">
-            Everything you need to fill your freezer for the month.
+            Everything you need to fill your freezer.
           </h2>
         </div>
 

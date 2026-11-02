@@ -13,12 +13,12 @@ interface FaqSectionProps {
 
 export const FaqSection: React.FC<FaqSectionProps> = ({ onCtaClick }) => {
   const [openIndex, setOpenIndex] = useState<number | null>(null);
-  const isReady = siteConfig.isLive && isValidCheckoutUrl(siteConfig.checkoutUrl);
+  const isReady = siteConfig.isLive && isValidCheckoutUrl(siteConfig.checkoutUrlPremium);
 
   const faqs = [
     {
-      q: 'Will this really cover a whole month?',
-      a: 'Yes. With 30 recipes and the Mix Your Week rotation map, you can spread your meals across the month. Cook in batches, freeze, and pull a meal out whenever you need it.',
+      q: 'Will this cover every dinner for a month?',
+      a: 'It is built for busy nights, not every single dinner. Each recipe makes several portions, so you cook in batches, freeze, and pull out a prepared meal whenever you need one. How far they stretch depends on your household and how often you cook.',
     },
     {
       q: 'Are the recipes really high in protein?',
@@ -117,7 +117,7 @@ export const FaqSection: React.FC<FaqSectionProps> = ({ onCtaClick }) => {
           />
           <div className="relative z-10 space-y-4 max-w-lg mx-auto">
             <h3 className="font-serif text-2xl sm:text-3xl md:text-4xl font-normal text-[#FFF9EF] leading-tight text-balance">
-              Your busiest nights, covered for the whole month.
+              Prepared meals for your busiest nights.
             </h3>
             <p className="text-sm sm:text-base text-[#FFF9EF]/80 font-normal">
               30 high-protein recipes from $9. Go Premium for $19 and add 5 bonus guides.

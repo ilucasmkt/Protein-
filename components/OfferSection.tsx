@@ -13,13 +13,13 @@ interface OfferSectionProps {
 }
 
 const coreItems = [
-  '30 high-protein lunch & dinner recipes, a full month of meals',
+  '30 high-protein lunch & dinner recipes made for batch cooking and freezing',
   'Portioning, cooling, freezing & reheating instructions',
   'Estimated calories, protein, carbs & fat on every recipe',
 ];
 
 const bonuses = [
-  { name: 'Master Grocery List', desc: 'The whole month, organized by store aisle' },
+  { name: 'Master Grocery List', desc: 'Organized by store aisle' },
   { name: 'Reheating Cheat Sheet', desc: 'Microwave, oven & air fryer, so nothing dries out' },
   { name: 'First Batch Roadmap', desc: 'Starter plan & prep sequence' },
   { name: 'Freezer Finder', desc: 'Inventory pages & printable labels' },
@@ -83,7 +83,7 @@ export const OfferSection: React.FC<OfferSectionProps> = ({ onBuy, isReady }) =>
             Instant Digital Access
           </div>
           <h2 className="font-serif text-3xl sm:text-4xl md:text-[46px] font-normal text-brand-navy leading-tight mb-3 text-balance">
-            Stock your freezer for the whole month.
+            Stock your freezer for busy nights.
           </h2>
           <p className="text-base sm:text-lg text-brand-navy/85 max-w-lg mx-auto">
             One-time payment. Instant PDF download. Yours to keep forever.
@@ -141,7 +141,7 @@ export const OfferSection: React.FC<OfferSectionProps> = ({ onBuy, isReady }) =>
                 <span className="text-xs font-semibold text-brand-muted uppercase tracking-wider">USD • One-time</span>
               </div>
               <p className="text-xs sm:text-sm text-brand-navy/80 mt-1 font-medium">
-                The complete system. About $0.63 per meal.
+                The complete freezer meal prep system.
               </p>
 
               <ul className="space-y-2.5 mt-6">

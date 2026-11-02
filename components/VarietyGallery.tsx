@@ -40,7 +40,7 @@ export const VarietyGallery: React.FC = () => {
             30 recipes your whole family will actually eat.
           </h2>
           <p className="mt-3.5 text-base sm:text-lg text-brand-navy/80 font-normal">
-            Chicken, turkey, beef and more, from comfort-food classics to fresh lean bowls. A month of variety, so you never get bored.
+            Chicken, turkey, beef and more, from comfort-food classics to fresh lean bowls. Plenty of variety, so you never get bored.
           </p>
         </div>
 

@@ -21,7 +21,7 @@ export const Footer: React.FC = () => {
           <div>
             <div className="flex items-center gap-3 mb-2">
               <img
-                src={`${import.meta.env.BASE_URL}assets/aistudio/logo-protein-on-standby_a5e31f30.png`}
+                src={`${import.meta.env.BASE_URL}assets/opt/logo.webp`}
                 alt="Protein on Standby"
                 className="h-8 sm:h-9 w-auto object-contain"
                 width="160"

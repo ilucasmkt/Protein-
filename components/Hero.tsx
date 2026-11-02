@@ -27,7 +27,7 @@ export const Hero: React.FC<HeroProps> = ({ onCtaClick, isLive = false }) => {
           {/* Brand Logo Header */}
           <div className="flex justify-center mb-3 sm:mb-4">
             <img
-              src={`${import.meta.env.BASE_URL}assets/aistudio/logo-protein-on-standby_a5e31f30.png`}
+              src={`${import.meta.env.BASE_URL}assets/opt/logo.webp`}
               alt="Protein on Standby"
               className="h-7 sm:h-9 w-auto object-contain"
               width="180"
@@ -54,7 +54,7 @@ export const Hero: React.FC<HeroProps> = ({ onCtaClick, isLive = false }) => {
               aria-hidden="true"
             />
             <img
-              src={`${import.meta.env.BASE_URL}assets/aistudio/hero-mockup-protein-on-standby_2cabd36a.png`}
+              src={`${import.meta.env.BASE_URL}assets/opt/hero-mockup.webp`}
               alt="Protein on Standby digital cookbook and portioned high-protein freezer meals in glass containers"
               className="w-full h-auto max-h-[220px] sm:max-h-[310px] lg:max-h-[340px] object-contain drop-shadow-lg"
               fetchPriority="high"

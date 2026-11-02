@@ -64,7 +64,7 @@ export const TangibleProduct: React.FC = () => {
             {/* Main digital cookbook cover */}
             <div className="bg-white p-4 sm:p-5 rounded-2xl border border-brand-border/70 shadow-xs flex items-center justify-center">
               <img
-                src={`${import.meta.env.BASE_URL}assets/aistudio/cover-protein-on-standby_fc210ad5.png`}
+                src={`${import.meta.env.BASE_URL}assets/opt/cover.webp`}
                 alt="Protein on Standby digital PDF cookbook cover"
                 className="w-full max-w-[340px] h-auto object-contain rounded-lg shadow-sm"
                 loading="lazy"
@@ -79,7 +79,7 @@ export const TangibleProduct: React.FC = () => {
                 Premium Bonus Guides
               </span>
               <img
-                src={`${import.meta.env.BASE_URL}assets/aistudio/bonus-bundle-protein-on-standby_9dac03d3.png`}
+                src={`${import.meta.env.BASE_URL}assets/opt/bonus-bundle.webp`}
                 alt="Three included PDF guides: First Batch Roadmap, Freezer Finder, and Mix Your Week"
                 className="w-full h-auto object-contain rounded-lg"
                 loading="lazy"

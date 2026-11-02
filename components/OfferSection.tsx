@@ -102,7 +102,7 @@ export const OfferSection: React.FC<OfferSectionProps> = ({ onBuy, isReady }) =>
             <div className="lg:col-span-7 flex flex-col gap-5">
               <div className="rounded-2xl bg-brand-sand/50 border border-brand-border/60 p-4 sm:p-6 flex items-center justify-center">
                 <img
-                  src={`${import.meta.env.BASE_URL}assets/aistudio/hero-mockup-protein-on-standby_2cabd36a.png`}
+                  src={`${import.meta.env.BASE_URL}assets/opt/hero-mockup.webp`}
                   alt="Protein on Standby cookbook on tablet and phone with meals in glass containers"
                   className="w-full h-auto max-h-[340px] object-contain drop-shadow-lg"
                   loading="lazy"
@@ -119,7 +119,7 @@ export const OfferSection: React.FC<OfferSectionProps> = ({ onBuy, isReady }) =>
                   {bonuses.map((b, i) => (
                     <div key={b.name} className="flex flex-col items-center text-center gap-1.5">
                       <img
-                        src={`${import.meta.env.BASE_URL}assets/bonus-covers/b${i + 1}-1.jpg`}
+                        src={`${import.meta.env.BASE_URL}assets/bonus-covers/b${i + 1}.webp`}
                         alt={`Bonus ${i + 1}: ${b.name}`}
                         className="w-full h-auto rounded-md shadow-md border border-brand-border/70"
                         width="400"
@@ -184,7 +184,7 @@ export const OfferSection: React.FC<OfferSectionProps> = ({ onBuy, isReady }) =>
           <div className="grid grid-cols-1 md:grid-cols-12 gap-6 md:gap-8 items-center">
             <div className="md:col-span-3 flex justify-center">
               <img
-                src={`${import.meta.env.BASE_URL}assets/aistudio/cover-protein-on-standby_fc210ad5.png`}
+                src={`${import.meta.env.BASE_URL}assets/opt/cover.webp`}
                 alt="Protein on Standby cookbook cover"
                 className="w-32 sm:w-40 h-auto rounded-md shadow-lg border border-brand-border/70"
                 loading="lazy"

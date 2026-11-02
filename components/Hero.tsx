@@ -73,7 +73,7 @@ export const Hero: React.FC<HeroProps> = ({ onCtaClick, isLive = false }) => {
               }}
               className="w-full sm:w-auto min-w-[300px] inline-flex items-center justify-center gap-2.5 px-8 py-4 text-base sm:text-lg font-bold text-white bg-brand-orange hover:bg-brand-orange-hover active:scale-[0.98] rounded-xl shadow-lg transition-all animate-cta-pulse focus-visible:outline-2 focus-visible:outline-brand-orange cursor-pointer"
             >
-              <span>Get My 30 Recipes — From $9</span>
+              <span>Get My 30 Recipes — From $10</span>
               <ArrowDown className="w-4 h-4 text-white" aria-hidden="true" />
             </button>
           </div>

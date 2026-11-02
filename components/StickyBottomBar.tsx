@@ -63,7 +63,7 @@ export const StickyBottomBar: React.FC<StickyBottomBarProps> = ({ onCtaClick, is
       <div className="flex items-center justify-between gap-3 max-w-md mx-auto">
         <div className="flex flex-col">
           <span className="font-serif font-bold text-base text-brand-navy leading-none">
-            From $9 <span className="text-[11px] font-sans font-medium text-brand-muted">one-time</span>
+            From $10 <span className="text-[11px] font-sans font-medium text-brand-muted">one-time</span>
           </span>
           <span className="text-[10px] text-brand-muted mt-0.5">Premium $19 includes 5 bonus guides</span>
         </div>

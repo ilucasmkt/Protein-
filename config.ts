@@ -12,7 +12,7 @@ export interface AppConfig {
 
   /**
    * External checkout URLs (e.g. Gumroad, Lemon Squeezy, Stripe Checkout).
-   * Basic = 30 recipes ($9). Premium = 30 recipes + 5 bonus guides ($19).
+   * Basic = 30 recipes ($10). Premium = 30 recipes + 5 bonus guides ($19).
    * Leave empty until supplied by merchant.
    */
   checkoutUrlBasic: string;

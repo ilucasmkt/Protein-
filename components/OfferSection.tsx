@@ -171,7 +171,7 @@ export const OfferSection: React.FC<OfferSectionProps> = ({ onBuy, isReady }) =>
                   }}
                   className="w-full inline-flex items-center justify-center gap-2 py-2.5 px-5 text-sm font-semibold rounded-lg text-brand-navy/80 bg-transparent border border-brand-border hover:border-brand-navy hover:text-brand-navy transition-all cursor-pointer focus-visible:outline-2 focus-visible:outline-brand-navy"
                 >
-                  <span>Get just the recipes for $9</span>
+                  <span>Get just the recipes for $10</span>
                   <ArrowDown className="w-4 h-4" aria-hidden="true" />
                 </button>
               </div>
@@ -179,7 +179,7 @@ export const OfferSection: React.FC<OfferSectionProps> = ({ onBuy, isReady }) =>
           </div>
         </div>
 
-        {/* $9 recipes-only offer */}
+        {/* $10 recipes-only offer */}
         <div id="offer-basic" className="mt-8 sm:mt-10 bg-white rounded-3xl border-2 border-brand-navy/15 shadow-md p-6 sm:p-8 scroll-mt-20">
           <div className="grid grid-cols-1 md:grid-cols-12 gap-6 md:gap-8 items-center">
             <div className="md:col-span-3 flex justify-center">
@@ -204,11 +204,11 @@ export const OfferSection: React.FC<OfferSectionProps> = ({ onBuy, isReady }) =>
             </div>
             <div className="md:col-span-4">
               <div className="flex items-baseline gap-2">
-                <span className="font-serif text-5xl font-bold text-brand-navy">$9</span>
+                <span className="font-serif text-5xl font-bold text-brand-navy">$10</span>
                 <span className="text-xs font-semibold text-brand-muted uppercase tracking-wider">USD • One-time</span>
               </div>
               <div className="mt-4">
-                <Button plan="basic" label="Get the Recipes — $9" />
+                <Button plan="basic" label="Get the Recipes — $10" />
               </div>
             </div>
           </div>

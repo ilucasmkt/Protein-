@@ -62,7 +62,7 @@ export const App: React.FC = () => {
         {/* Section 4: Tangible Product + Included Bonuses */}
         <TangibleProduct />
 
-        {/* Section 5: Two Plans: $9 Recipes / $19 Premium */}
+        {/* Section 5: Two Plans: $10 Recipes / $19 Premium */}
         <OfferSection onBuy={handleBuy} isReady={isReady} />
 
         {/* Section 6: Concise Accessible FAQ + Final CTA */}

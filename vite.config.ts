@@ -8,7 +8,7 @@ export default defineConfig(() => {
         port: 3000,
         host: '0.0.0.0',
       },
-      base: '/Protein-/',
+      base: process.env.VERCEL ? '/' : '/Protein-/',
       plugins: [react()],
       resolve: {
         alias: {

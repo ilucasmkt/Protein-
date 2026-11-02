@@ -43,9 +43,9 @@ export interface AppConfig {
 }
 
 export const siteConfig: AppConfig = {
-  isLive: false,
-  checkoutUrlBasic: '',
-  checkoutUrlPremium: '',
+  isLive: true,
+  checkoutUrlBasic: 'https://pay.cakto.com.br/suyc9xp_1259647',
+  checkoutUrlPremium: 'https://pay.cakto.com.br/33w5ebq',
   enableBreakfastAddOn: false,
   sampleRecipeUrl: '',
   sampleRecipeImage: '',

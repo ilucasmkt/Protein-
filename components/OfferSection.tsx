@@ -5,7 +5,7 @@
 
 import React from 'react';
 import { trackCtaClick } from '../config';
-import { ArrowRight, Check, Sparkles, Crown } from 'lucide-react';
+import { ArrowRight, ArrowDown, Check, Sparkles, Crown } from 'lucide-react';
 
 interface OfferSectionProps {
   onBuy: (plan: 'basic' | 'premium') => void;
@@ -163,7 +163,52 @@ export const OfferSection: React.FC<OfferSectionProps> = ({ onBuy, isReady }) =>
 
               <div className="mt-7 space-y-3">
                 <Button plan="premium" label="Get the Premium Bundle — $19" primary />
-                <Button plan="basic" label="Get just the recipes for $9" small />
+                <button
+                  type="button"
+                  onClick={() => {
+                    trackCtaClick('offer_see_recipes_only');
+                    document.getElementById('offer-basic')?.scrollIntoView({ behavior: 'smooth', block: 'center' });
+                  }}
+                  className="w-full inline-flex items-center justify-center gap-2 py-2.5 px-5 text-sm font-semibold rounded-lg text-brand-navy/80 bg-transparent border border-brand-border hover:border-brand-navy hover:text-brand-navy transition-all cursor-pointer focus-visible:outline-2 focus-visible:outline-brand-navy"
+                >
+                  <span>Get just the recipes for $9</span>
+                  <ArrowDown className="w-4 h-4" aria-hidden="true" />
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        {/* $9 recipes-only offer */}
+        <div id="offer-basic" className="mt-8 sm:mt-10 bg-white rounded-3xl border-2 border-brand-navy/15 shadow-md p-6 sm:p-8 scroll-mt-20">
+          <div className="grid grid-cols-1 md:grid-cols-12 gap-6 md:gap-8 items-center">
+            <div className="md:col-span-3 flex justify-center">
+              <img
+                src={`${import.meta.env.BASE_URL}assets/aistudio/cover-protein-on-standby_fc210ad5.png`}
+                alt="Protein on Standby cookbook cover"
+                className="w-32 sm:w-40 h-auto rounded-md shadow-lg border border-brand-border/70"
+                loading="lazy"
+              />
+            </div>
+            <div className="md:col-span-5">
+              <div className="text-xs font-bold uppercase tracking-wider text-brand-muted mb-2">Recipes Only</div>
+              <h3 className="font-serif text-2xl text-brand-navy leading-tight">30 Freezer Recipes</h3>
+              <ul className="space-y-2 mt-4">
+                {coreItems.map((item) => (
+                  <li key={item} className="flex items-start gap-2.5">
+                    <CheckDot />
+                    <span className="text-sm text-brand-navy/90 leading-snug">{item}</span>
+                  </li>
+                ))}
+              </ul>
+            </div>
+            <div className="md:col-span-4">
+              <div className="flex items-baseline gap-2">
+                <span className="font-serif text-5xl font-bold text-brand-navy">$9</span>
+                <span className="text-xs font-semibold text-brand-muted uppercase tracking-wider">USD • One-time</span>
+              </div>
+              <div className="mt-4">
+                <Button plan="basic" label="Get the Recipes — $9" />
               </div>
             </div>
           </div>

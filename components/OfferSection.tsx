@@ -74,10 +74,10 @@ export const OfferSection: React.FC<OfferSectionProps> = ({ onBuy, isReady }) =>
   };
 
   return (
-    <section id="offer" className="py-16 sm:py-24 bg-[#FFF9EF] border-t border-brand-border/60 scroll-mt-14">
+    <section id="offer" className="py-10 sm:py-20 bg-[#FFF9EF] border-t border-brand-border/60 scroll-mt-14">
       <div className="max-w-[1060px] mx-auto px-5 sm:px-6">
         {/* Heading */}
-        <div className="text-center max-w-2xl mx-auto mb-10 sm:mb-14">
+        <div className="text-center max-w-2xl mx-auto mb-6 sm:mb-10">
           <div className="inline-flex items-center gap-1.5 text-xs font-bold uppercase tracking-wider text-brand-orange mb-2.5">
             <Sparkles className="w-3.5 h-3.5" aria-hidden="true" />
             Instant Digital Access
@@ -90,21 +90,21 @@ export const OfferSection: React.FC<OfferSectionProps> = ({ onBuy, isReady }) =>
           </p>
         </div>
 
-        <div className="relative bg-white rounded-3xl border-[3px] border-brand-orange shadow-xl overflow-hidden">
+        <div id="offer-premium" className="relative bg-white rounded-3xl border-[3px] border-brand-orange shadow-xl overflow-hidden scroll-mt-16">
           <div className="absolute -top-16 -right-16 w-72 h-72 bg-brand-orange/10 rounded-full blur-3xl pointer-events-none" aria-hidden="true" />
           <div className="absolute top-0 right-0 z-10 bg-brand-orange text-white text-[11px] font-bold uppercase tracking-wider px-4 py-1.5 rounded-bl-2xl inline-flex items-center gap-1.5">
             <Crown className="w-3.5 h-3.5" aria-hidden="true" />
             Best Value
           </div>
 
-          <div className="relative grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-10 p-6 sm:p-10 lg:p-12">
+          <div className="relative grid grid-cols-1 lg:grid-cols-12 gap-5 lg:gap-10 p-4 pt-9 sm:p-10 lg:p-12">
             {/* LEFT: the product */}
             <div className="lg:col-span-7 flex flex-col gap-5">
-              <div className="rounded-2xl bg-brand-sand/50 border border-brand-border/60 p-4 sm:p-6 flex items-center justify-center">
+              <div className="rounded-2xl bg-brand-sand/50 border border-brand-border/60 p-2 sm:p-6 flex items-center justify-center">
                 <img
                   src={`${import.meta.env.BASE_URL}assets/opt/hero-mockup.webp`}
                   alt="Protein on Standby cookbook on tablet and phone with meals in glass containers"
-                  className="w-full h-auto max-h-[340px] object-contain drop-shadow-lg"
+                  className="w-full h-auto max-h-[190px] sm:max-h-[340px] object-contain drop-shadow-lg"
                   loading="lazy"
                   width="600"
                   height="450"
@@ -144,24 +144,7 @@ export const OfferSection: React.FC<OfferSectionProps> = ({ onBuy, isReady }) =>
                 The complete freezer meal prep system.
               </p>
 
-              <ul className="space-y-2.5 mt-6">
-                {coreItems.map((item) => (
-                  <li key={item} className="flex items-start gap-2.5">
-                    <CheckDot />
-                    <span className="text-sm text-brand-navy/90 leading-snug">{item}</span>
-                  </li>
-                ))}
-                {bonuses.map((b) => (
-                  <li key={b.name} className="flex items-start gap-2.5">
-                    <CheckDot tone="orange" />
-                    <span className="text-sm text-brand-navy/90 leading-snug">
-                      <strong className="text-brand-navy">{b.name}:</strong> {b.desc}
-                    </span>
-                  </li>
-                ))}
-              </ul>
-
-              <div className="mt-7 space-y-3">
+              <div className="mt-4 space-y-3">
                 <Button plan="premium" label="Get the Premium Bundle — $19" primary />
                 <button
                   type="button"
@@ -175,6 +158,24 @@ export const OfferSection: React.FC<OfferSectionProps> = ({ onBuy, isReady }) =>
                   <ArrowDown className="w-4 h-4" aria-hidden="true" />
                 </button>
               </div>
+
+              <ul className="space-y-2 mt-5">
+                {coreItems.map((item) => (
+                  <li key={item} className="flex items-start gap-2.5">
+                    <CheckDot />
+                    <span className="text-sm text-brand-navy/90 leading-snug">{item}</span>
+                  </li>
+                ))}
+                {bonuses.map((b) => (
+                  <li key={b.name} className="flex items-start gap-2.5">
+                    <CheckDot tone="orange" />
+                    <span className="text-sm text-brand-navy/90 leading-snug">
+                      <strong className="text-brand-navy">{b.name}</strong><span className="hidden sm:inline">: {b.desc}</span>
+                    </span>
+                  </li>
+                ))}
+              </ul>
+
             </div>
           </div>
         </div>

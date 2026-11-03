@@ -24,10 +24,20 @@ export const App: React.FC = () => {
 
   // Hero / FAQ / sticky bar buttons take the visitor to the two-plan comparison.
   const handleCtaAction = () => {
-    const offerElement = document.getElementById('offer');
-    if (offerElement) {
-      offerElement.scrollIntoView({ behavior: 'smooth' });
-    }
+    const target = document.getElementById('offer-premium') || document.getElementById('offer');
+    if (!target) return;
+    const go = (behavior: ScrollBehavior) => {
+      const top = target.getBoundingClientRect().top + window.scrollY - 64;
+      window.scrollTo({ top, behavior });
+    };
+    go('smooth');
+    // re-correct after lazy images load and shift the layout
+    [600, 1200, 2000].forEach((ms) =>
+      setTimeout(() => {
+        const off = target.getBoundingClientRect().top - 64;
+        if (Math.abs(off) > 12) go('smooth');
+      }, ms)
+    );
   };
 
   const handleBuy = (plan: 'basic' | 'premium') => {

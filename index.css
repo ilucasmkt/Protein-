@@ -43,3 +43,14 @@ html, body {
 h1, h2, h3, h4, .font-serif {
   font-family: 'Fraunces', Georgia, serif;
 }
+
+@keyframes insideScroll {
+  from { transform: translateX(0); }
+  to { transform: translateX(-50%); }
+}
+.inside-track { animation: insideScroll 55s linear infinite; will-change: transform; }
+.inside-marquee:hover .inside-track { animation-play-state: paused; }
+@media (prefers-reduced-motion: reduce) {
+  .inside-track { animation: none; }
+  .inside-marquee { overflow-x: auto; }
+}

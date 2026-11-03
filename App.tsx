@@ -10,6 +10,7 @@ import { WhyItWorks } from './components/WhyItWorks';
 import { VarietyGallery } from './components/VarietyGallery';
 import { SimpleProcess } from './components/SimpleProcess';
 import { TangibleProduct } from './components/TangibleProduct';
+import { InsideCarousel } from './components/InsideCarousel';
 import { OfferSection } from './components/OfferSection';
 import { FaqSection } from './components/FaqSection';
 import { Footer } from './components/Footer';
@@ -80,6 +81,8 @@ export const App: React.FC = () => {
 
         {/* Section 4: Tangible Product + Included Bonuses */}
         <TangibleProduct />
+
+        <InsideCarousel />
 
         {/* Section 5: Two Plans: $10 Recipes / $19 Premium */}
         <OfferSection onBuy={handleBuy} isReady={isReady} />

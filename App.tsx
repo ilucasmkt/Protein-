@@ -31,7 +31,26 @@ export const App: React.FC = () => {
 
   const handleBuy = (plan: 'basic' | 'premium') => {
     if (!isReady) return;
-    window.location.href = plan === 'premium' ? siteConfig.checkoutUrlPremium : siteConfig.checkoutUrlBasic;
+    const url = plan === 'premium' ? siteConfig.checkoutUrlPremium : siteConfig.checkoutUrlBasic;
+    const price = plan === 'premium' ? 19 : 10;
+    const fbq = (window as any).fbq;
+    let redirected = false;
+    const go = () => { if (redirected) return; redirected = true; window.location.href = url; };
+    try {
+      if (typeof fbq === 'function') {
+        fbq('track', 'InitiateCheckout', {
+          value: price,
+          currency: 'USD',
+          content_name: plan === 'premium' ? 'Protein on Standby Premium' : 'Protein on Standby Recipes',
+          content_ids: [plan],
+          content_type: 'product',
+          num_items: 1,
+        });
+        setTimeout(go, 250);
+        return;
+      }
+    } catch (e) {}
+    go();
   };
 
   const handleExploreProduct = () => {

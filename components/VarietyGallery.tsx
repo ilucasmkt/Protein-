@@ -28,30 +28,31 @@ export const VarietyGallery: React.FC = () => {
   ];
 
   return (
-    <section id="gallery" className="py-16 sm:py-24 bg-[#FBF6EC] border-t border-brand-border/60">
+    <section id="gallery" className="py-10 sm:py-24 bg-[#FBF6EC] border-t border-brand-border/60">
       <div className="max-w-[1180px] mx-auto px-5 sm:px-6">
         
         {/* Section Header */}
-        <div className="text-center max-w-2xl mx-auto mb-10 sm:mb-14">
+        <div className="text-center max-w-2xl mx-auto mb-5 sm:mb-14">
           <div className="inline-block text-xs font-bold uppercase tracking-wider text-brand-orange mb-2.5">
             Illustrative Recipe Examples
           </div>
           <h2 className="font-serif text-3xl sm:text-4xl md:text-[42px] font-normal text-brand-navy leading-tight text-balance">
-            30 recipes your whole family will actually eat.
+            <span className="sm:hidden">30 recipes you will actually love.</span>
+            <span className="hidden sm:inline">30 recipes your whole family will actually eat.</span>
           </h2>
-          <p className="mt-3.5 text-base sm:text-lg text-brand-navy/80 font-normal">
+          <p className="hidden sm:block mt-3.5 text-base sm:text-lg text-brand-navy/80 font-normal">
             Chicken, turkey, beef and more, from comfort-food classics to fresh lean bowls. Plenty of variety, so you never get bored.
           </p>
         </div>
 
         {/* 3 Appetizing Food Cards */}
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-6 sm:gap-8">
+        <div className="grid grid-cols-3 gap-2 sm:gap-8">
           {meals.map((meal, index) => (
             <div
               key={index}
               className="bg-white rounded-2xl overflow-hidden border border-brand-border/70 shadow-xs hover:shadow-md transition-shadow flex flex-col"
             >
-              <div className="aspect-[4/3] w-full overflow-hidden bg-brand-sand relative">
+              <div className="aspect-square sm:aspect-[4/3] w-full overflow-hidden bg-brand-sand relative">
                 <img
                   src={meal.image}
                   alt={meal.alt}
@@ -61,12 +62,12 @@ export const VarietyGallery: React.FC = () => {
                   height="300"
                 />
               </div>
-              <div className="p-5 sm:p-6 flex-1 flex flex-col justify-between">
+              <div className="p-2 sm:p-6 flex-1 flex flex-col justify-between">
                 <div>
-                  <h3 className="font-serif text-xl sm:text-2xl font-bold text-brand-navy mb-1.5">
+                  <h3 className="font-serif text-sm sm:text-2xl font-bold text-brand-navy sm:mb-1.5 text-center sm:text-left">
                     {meal.title}
                   </h3>
-                  <p className="text-sm text-brand-navy/80 leading-relaxed">
+                  <p className="hidden sm:block text-sm text-brand-navy/80 leading-relaxed">
                     {meal.caption}
                   </p>
                 </div>

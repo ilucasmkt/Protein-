@@ -44,7 +44,7 @@ export const TangibleProduct: React.FC = () => {
   const hasRealSample = Boolean(siteConfig.sampleRecipeUrl || siteConfig.sampleRecipeImage);
 
   return (
-    <section id="product" className="py-16 sm:py-24 bg-[#FBF6EC] border-t border-brand-border/60">
+    <section id="product" className="hidden md:block py-16 sm:py-24 bg-[#FBF6EC] border-t border-brand-border/60">
       <div className="max-w-[1180px] mx-auto px-5 sm:px-6">
         
         {/* Section Header */}

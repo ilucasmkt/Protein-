@@ -85,8 +85,8 @@ export const OfferSection: React.FC<OfferSectionProps> = ({ onBuy, isReady }) =>
           <h2 className="font-serif text-3xl sm:text-4xl md:text-[46px] font-normal text-brand-navy leading-tight mb-3 text-balance">
             Stock your freezer for busy nights.
           </h2>
-          <p className="text-base sm:text-lg text-brand-navy/85 max-w-lg mx-auto">
-            One-time payment. Instant PDF download. Yours to keep forever.
+          <p className="text-sm sm:text-lg text-brand-navy/85 max-w-lg mx-auto">
+            One-time payment. Instant PDF download.
           </p>
         </div>
 
@@ -161,7 +161,7 @@ export const OfferSection: React.FC<OfferSectionProps> = ({ onBuy, isReady }) =>
 
               <ul className="space-y-2 mt-5">
                 {coreItems.map((item) => (
-                  <li key={item} className="flex items-start gap-2.5">
+                  <li key={item} className="hidden sm:flex items-start gap-2.5">
                     <CheckDot />
                     <span className="text-sm text-brand-navy/90 leading-snug">{item}</span>
                   </li>
@@ -194,7 +194,7 @@ export const OfferSection: React.FC<OfferSectionProps> = ({ onBuy, isReady }) =>
             <div className="md:col-span-5">
               <div className="text-xs font-bold uppercase tracking-wider text-brand-muted mb-2">Recipes Only</div>
               <h3 className="font-serif text-2xl text-brand-navy leading-tight">30 Freezer Recipes</h3>
-              <ul className="space-y-2 mt-4">
+              <ul className="hidden md:block space-y-2 mt-4">
                 {coreItems.map((item) => (
                   <li key={item} className="flex items-start gap-2.5">
                     <CheckDot />

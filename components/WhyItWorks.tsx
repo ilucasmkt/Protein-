@@ -39,33 +39,34 @@ export const WhyItWorks: React.FC = () => {
   ];
 
   return (
-    <section id="why" className="py-16 sm:py-24 bg-[#FFF9EF] border-t border-brand-border/60">
+    <section id="why" className="py-10 sm:py-24 bg-[#FFF9EF] border-t border-brand-border/60">
       <div className="max-w-[1100px] mx-auto px-5 sm:px-6">
-        <div className="text-center max-w-2xl mx-auto mb-10 sm:mb-14">
+        <div className="text-center max-w-2xl mx-auto mb-6 sm:mb-14">
           <div className="inline-block text-xs font-bold uppercase tracking-wider text-brand-orange mb-2.5">
             Why Freezer Meal Prep
           </div>
           <h2 className="font-serif text-3xl sm:text-4xl md:text-[42px] font-normal text-brand-navy leading-tight text-balance">
-            Have high-protein meals ready for your busiest nights.
+            <span className="sm:hidden">Healthy dinners, already made.</span>
+            <span className="hidden sm:inline">Have high-protein meals ready for your busiest nights.</span>
           </h2>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-5 sm:gap-6 mb-12 sm:mb-16">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-3 sm:gap-6 sm:mb-16">
           {benefits.map((b) => {
             const Icon = b.icon;
             return (
-              <div key={b.title} className="bg-white rounded-2xl p-6 border border-brand-border/70 shadow-xs">
-                <div className="w-11 h-11 rounded-xl bg-brand-orange/10 flex items-center justify-center mb-4">
+              <div key={b.title} className="bg-white rounded-2xl p-4 sm:p-6 border border-brand-border/70 shadow-xs flex items-center gap-4 md:block">
+                <div className="w-11 h-11 rounded-xl bg-brand-orange/10 flex items-center justify-center md:mb-4 shrink-0">
                   <Icon className="w-5 h-5 text-brand-orange" aria-hidden="true" />
                 </div>
-                <h3 className="font-serif text-xl font-bold text-brand-navy mb-2">{b.title}</h3>
-                <p className="text-sm sm:text-[15px] text-brand-navy/80 leading-relaxed">{b.description}</p>
+                <div><h3 className="font-serif text-lg sm:text-xl font-bold text-brand-navy md:mb-2">{b.title}</h3>
+                <p className="hidden md:block text-[15px] text-brand-navy/80 leading-relaxed">{b.description}</p></div>
               </div>
             );
           })}
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-5 sm:gap-6 max-w-4xl mx-auto">
+        <div className="hidden sm:grid grid-cols-1 md:grid-cols-2 gap-5 sm:gap-6 max-w-4xl mx-auto">
           <div className="rounded-2xl p-6 sm:p-7 bg-white border border-brand-border/70">
             <h3 className="font-serif text-xl font-bold text-brand-navy/70 mb-4">Busy weeknights, today</h3>
             <ul className="space-y-3">

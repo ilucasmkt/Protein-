@@ -29,11 +29,11 @@ export const SimpleProcess: React.FC = () => {
   ];
 
   return (
-    <section id="process" className="py-16 sm:py-24 bg-[#FFF9EF] border-t border-brand-border/60">
+    <section id="process" className="py-10 sm:py-24 bg-[#FFF9EF] border-t border-brand-border/60">
       <div className="max-w-[1180px] mx-auto px-5 sm:px-6">
         
         {/* Section Header */}
-        <div className="text-center max-w-xl mx-auto mb-12 sm:mb-16">
+        <div className="text-center max-w-xl mx-auto mb-5 sm:mb-16">
           <div className="inline-block text-xs font-bold uppercase tracking-wider text-brand-orange mb-2.5">
             How It Works
           </div>
@@ -43,27 +43,27 @@ export const SimpleProcess: React.FC = () => {
         </div>
 
         {/* 3 Compact Visual Steps */}
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-6 sm:gap-8 max-w-4xl mx-auto">
+        <div className="grid grid-cols-3 gap-2 sm:gap-8 max-w-4xl mx-auto">
           {steps.map((step) => {
             const Icon = step.icon;
             return (
               <div
                 key={step.num}
-                className="bg-white rounded-2xl p-6 sm:p-7 border border-brand-border/70 shadow-xs flex flex-col justify-between"
+                className="bg-white rounded-2xl p-3 sm:p-7 border border-brand-border/70 shadow-xs flex flex-col justify-between"
               >
                 <div>
-                  <div className="flex items-center justify-between mb-4">
+                  <div className="flex items-center justify-between mb-2 sm:mb-4">
                     <span className="font-serif text-2xl font-bold text-brand-orange">
                       {step.num}
                     </span>
-                    <div className="w-10 h-10 rounded-xl bg-brand-sand/70 flex items-center justify-center text-brand-navy">
+                    <div className="hidden sm:flex w-10 h-10 rounded-xl bg-brand-sand/70 flex items-center justify-center text-brand-navy">
                       <Icon className="w-5 h-5 text-brand-navy" aria-hidden="true" />
                     </div>
                   </div>
-                  <h3 className="font-serif text-xl font-bold text-brand-navy mb-2">
+                  <h3 className="font-serif text-sm sm:text-xl font-bold text-brand-navy sm:mb-2 leading-tight">
                     {step.title}
                   </h3>
-                  <p className="text-sm sm:text-[15px] text-brand-navy/80 leading-relaxed">
+                  <p className="hidden sm:block text-[15px] text-brand-navy/80 leading-relaxed">
                     {step.description}
                   </p>
                 </div>
@@ -73,7 +73,7 @@ export const SimpleProcess: React.FC = () => {
         </div>
 
         {/* Explicit safe cooling instructions */}
-        <div className="mt-10 p-4 sm:p-5 bg-brand-sage-light/60 rounded-xl border border-brand-sage/50 max-w-2xl mx-auto flex items-start gap-3.5">
+        <div className="hidden sm:flex mt-10 p-4 sm:p-5 bg-brand-sage-light/60 rounded-xl border border-brand-sage/50 max-w-2xl mx-auto flex items-start gap-3.5">
           <ShieldAlert className="w-5 h-5 text-brand-navy/80 shrink-0 mt-0.5" aria-hidden="true" />
           <p className="text-xs sm:text-sm text-brand-navy/85 leading-relaxed">
             <strong className="font-semibold text-brand-navy">Safe cooling guidance:</strong> Follow safe cooling instructions before sealing and freezing meals. Never leave warm cooked food sitting at room temperature.

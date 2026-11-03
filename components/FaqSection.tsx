@@ -56,7 +56,7 @@ export const FaqSection: React.FC<FaqSectionProps> = ({ onCtaClick }) => {
         
         {/* FAQ Header */}
         <div className="text-center max-w-xl mx-auto mb-10 sm:mb-12">
-          <div className="inline-block text-xs font-bold uppercase tracking-wider text-brand-orange mb-2.5">
+          <div className="hidden sm:inline-block text-xs font-bold uppercase tracking-wider text-brand-orange mb-2.5">
             Answers to Common Questions
           </div>
           <h2 className="font-serif text-3xl sm:text-4xl font-normal text-brand-navy leading-tight text-balance">

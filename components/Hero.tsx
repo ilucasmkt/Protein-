@@ -44,7 +44,8 @@ export const Hero: React.FC<HeroProps> = ({ onCtaClick, isLive = false }) => {
             <span className="italic font-normal text-brand-orange">Ready for Your Busiest Nights.</span>
           </h1>
           <p className="text-base sm:text-xl text-brand-navy/85 leading-snug max-w-2xl text-balance mb-2">
-            Cook once, stock your freezer, and have a healthy, protein-packed meal ready on your busiest nights. No more takeout, no more &ldquo;what&rsquo;s for dinner?&rdquo;
+            <span className="sm:hidden">Cook once. Freeze. Heat and eat in minutes.</span>
+            <span className="hidden sm:inline">Cook once, stock your freezer, and have a healthy, protein-packed meal ready on your busiest nights. No more takeout, no more &ldquo;what&rsquo;s for dinner?&rdquo;</span>
           </p>
 
           {/* 2. APPETIZING PRODUCT & FOOD MOCKUP */}
@@ -82,9 +83,9 @@ export const Hero: React.FC<HeroProps> = ({ onCtaClick, isLive = false }) => {
           <div className="mt-4 sm:mt-5 max-w-xl text-center space-y-2">
             <ul className="flex flex-wrap justify-center gap-x-4 gap-y-1.5 text-xs sm:text-sm font-semibold text-brand-navy/90">
               <li>✓ 30 recipes</li>
-              <li>✓ Protein &amp; macros per serving</li>
-              <li>✓ Premium adds 5 bonus guides</li>
-              <li>✓ Heat &amp; eat on busy nights</li>
+              <li>✓ Macros per serving</li>
+              <li className="hidden sm:list-item">✓ Premium adds 5 bonus guides</li>
+              <li className="hidden sm:list-item">✓ Heat &amp; eat on busy nights</li>
             </ul>
             <p className="pt-1 text-[11px] sm:text-xs text-brand-muted font-medium">
               One-time payment • Instant PDF download
